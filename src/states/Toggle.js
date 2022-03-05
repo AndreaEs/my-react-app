@@ -12,6 +12,7 @@ export class Toggle extends React.Component {
 
   changeColor(){
     const newColor = this.state.color == green ? yellow : green;
+    //setState always call render method
     this.setState({color: newColor}) 
   }
 

@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Mood from './states/Mood';
-import Toggle from './states/Toggle';
+import Clock from './lifeCycle/Clock';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Toggle />
+    <Clock />
   </React.StrictMode>,
   document.getElementById('root')
 );
