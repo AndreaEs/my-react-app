@@ -10,6 +10,15 @@ export class Clock extends React.Component{
       render() {
         return <div>{this.state.date.toLocaleTimeString()}</div>;
       }
+
+      componentDidMount(){
+        const oneSecond = 1000;
+        setInterval(() =>{
+          this.setState({
+            date: new Date()
+          });
+        }, oneSecond);
+      }
 }
 
 export default Clock;
